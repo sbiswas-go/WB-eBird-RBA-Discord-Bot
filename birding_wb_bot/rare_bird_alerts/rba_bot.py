@@ -15,7 +15,8 @@ LOG = logging.getLogger(__name__)
 CHANNEL_NAME = "ebird-alerts"
 
 # Replace YOUR_EBIRD_API_KEY with your eBird API key
-EBIRD_API_KEY = 'gjicu8vetrr8' # get_current_version_of_text_secret("ebird-api-key")
+EBIRD_API_KEY = 'gjicu8vetrr8' 
+# get_current_version_of_text_secret("ebird-api-key")
 
 # Illinois Region Code for eBird API
 EB_REGION_CODE = 'IN-WB'
