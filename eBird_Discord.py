@@ -1,9 +1,10 @@
 import requests
+import os
 from datetime import datetime
 
 # Configuration 
-EBIRD_API_KEY = "gjicu8vetrr8"
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1433889580859265046/J_aqklrPHKMBLVnKsfWPTASDMTtZVeKtLBnmb_KJP2kwjCDvj0CDiJmk-vlqwxLdK5cY"
+EBIRD_API_KEY = os.environ.get('EBIRD_API_KEY')
+DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
 REGION_CODE = "IN-WB" 
 
 def fetch_daily_notable_sightings():
