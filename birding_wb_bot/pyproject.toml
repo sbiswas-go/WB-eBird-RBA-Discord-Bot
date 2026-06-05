@@ -1,7 +1,0 @@
-[project]
-requires-python = ">=3.9"
-name = "birding_wb_bot"
-dynamic = ["dependencies"]
-
-[tool.setuptools.dynamic]
-dependencies = { file = ["requirements.in"] }
