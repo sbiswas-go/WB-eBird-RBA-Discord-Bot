@@ -32,7 +32,7 @@ def format_and_post_to_discord(observations):
     # content = f" **Daily eBird Notable Sightings Alert: {REGION_CODE}** ({date_str}) \n\n"
     content = f" Daily eBird Notable Sightings Alert: {REGION_CODE} ({date_str}) \n\n"
     
-    # Slice the results to avoid overrunning Discord's strict 2,000-character payload limits
+    # Slice the results to avoid overrunning Discord's strict 2,000 character payload limits
     for obs in observations[:12]:
         com_name = obs.get("comName", "Unknown Species")
         sci_name = obs.get("sciName", "Unknown")
