@@ -12,7 +12,7 @@ def fetch_daily_notable_sightings():
     url = f"https://api.ebird.org/v2/data/obs/{REGION_CODE}/recent/notable"
     headers = {"X-eBirdApiToken": EBIRD_API_KEY}
     
-    # Query parameters: 'back=1' isolates sightings reported within the past 24 hours
+    # Query parameters: 'back=1' isolate sightings reported within the past 24 hours
     params = {"back": 1, "detail": "simple"}
     
     response = requests.get(url, headers=headers, params=params)
